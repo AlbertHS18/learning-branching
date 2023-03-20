@@ -49,3 +49,11 @@ emergente.
 Hacer merge en Git crea un commit especial que tiene dos padres diferentes. Eso 
 significa que el merge creado tiene todo el trabajo junto de sus dos padres anteriores.
 
+## Especificadores.
+
+En lugar de especificar cuántas generaciones hacia atrás ir (como ~), el modificador de ^ especifica por 
+cuál de las referencias padres seguir en un commit de merge. Recuerda que un commit de merge tiene múltiples 
+padres, por lo que el camino a seguir es ambiguo.
+
+Git normalmente sigue el "primer" padre de un commit de merge, pero especificando un número junto con ^ cambia 
+este comportamiento predefinido.
